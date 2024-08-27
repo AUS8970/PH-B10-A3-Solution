@@ -7,12 +7,11 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  <script src="https://kit.fontawesome.com/77ba82d986.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/77ba82d986.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <style>
-
     .manrope-font { 
       font-family: "Manrope";
     }
@@ -30,6 +29,7 @@
 </head>
 <body class="manrope-font">
   <header class="container mx-auto banner-background">
+    <!-- Navber -->
     <nav class="navbar bg-base-100 justify-between my-9">
       <div class="navbar-start flex gap-4 items-center">
         <button class="flex gap-2" href="">
@@ -81,10 +81,11 @@
         </ul>
       </div>
     </nav>
+    <!-- Banner -->
     <div class="flex flex-col gap-6 items-center justify-center text-center space-y-6 mb-28">
       <img class="w-1/2" src="./Images/banner.png" alt="">
       <h1 class="text-7xl font-extrabold lg:w-[1200px] text-wrap"> A barn house of this design has a striking appearance </h1>
-      <p class="text-sm lg:w-[1000px] text-wrap"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light. </p>
+      <p class="text-xl opacity-80 lg:w-[1000px] text-wrap"> Welcome to our world of innovative design, where every space tells a story of elegance and comfort. </p>
       <button class="btn rounded-full bg-[#ABEF5F80]">
         <h1 class="text-lg"> View Details </h1>
         <div class="bg-[#ABEF5F] rounded-full p-3">
@@ -97,39 +98,40 @@
     </div>
   </header>
   <main>
-    <section class="space-y-24 bg-stone-100 py-24">
-      <section class="container mx-auto space-y-">
+    <!-- About Us Section -->
+    <section class="space-y-24 bg-stone-100 py-24 lg:px-24 px-4">
+      <div class="container mx-auto">
         <img src="./Images/Vector.png" alt="">
-          <div class="flex lg:flex-row flex-col design-section items-center justify-between px-6 pt-2">
-            <div class="md:w-1/2 w-full flex flex-col gap-6 lg:items-start items-center">
-              <button class="btn rounded-full bg-white"> <i class="fa-solid fa-arrow-right-long"></i> <p class="text-lg"> About Us</p> </button>
-              <h1 class="text-6xl font-extrabold lg:text-start text-center"> We design thoughtful, liveable spaces </h1>
-              <p class="text-xl text-[#494949] lg:text-start text-center"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents. </p>
-              <div class="flex items-center gap-4 bg-white rounded-2xl p-6">
-                <div class="">
-                  <img src="./Images/commercial.png" alt="">
-                </div>
-                <div class="">
-                  <h2 class="text-2xl font-semibold"> Commercial </h2>
-                  <p class="text-md text-[#494949]"> The barn house captivates with its blend of rustic charm and modern. </p>
-                </div>
+        <div class="flex lg:flex-row flex-col design-section items-center justify-between px-6 pt-2">
+          <div class="md:w-1/2 w-full flex flex-col gap-6 lg:items-start items-center">
+            <button class="btn rounded-full bg-white"> <i class="fa-solid fa-arrow-right-long"></i> <p class="text-lg"> About Us </p> </button>
+            <h1 class="text-5xl font-extrabold lg:text-start text-center"> We design thoughtful, liveable spaces </h1>
+            <p class="text-xl text-[#494949] lg:text-start text-center"> At the heart of our philosophy lies a commitment to crafting spaces that not only reflect your lifestyle but also inspire creativity and joy. </p>
+            <div class="flex items-center gap-4 bg-white rounded-2xl p-6">
+              <div class="">
+                <img src="./Images/commercial.png" alt="">
               </div>
-              <div class="flex items-center gap-4 bg-white rounded-2xl p-6">
-                <div class="">
-                  <img src="./Images/residential.png" alt="">
-                </div>
-                <div class="">
-                  <h2 class="text-2xl font-semibold"> Residential </h2>
-                  <p class="text-md text-[#494949]"> The barn house captivates with its blend of rustic charm and modern. </p>
-                </div>
+              <div class="space-y-2">
+                <h2 class="text-2xl font-bold"> Commercial </h2>
+                <p class="text-md text-[#494949]"> We specialize in creating cutting-edge commercial spaces that drive success and reflect the unique identity of your brand. </p>
               </div>
             </div>
-            <div class="md:w-1/2 w-full flex justify-end items-end">
-              <img src="./Images/Rectangle.png" alt="">
+            <div class="flex items-center gap-4 bg-white rounded-2xl p-6">
+              <div class="">
+                <img src="./Images/residential.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <h2 class="text-2xl font-bold"> Residential </h2>
+                <p class="text-md text-[#494949]"> Our residential designs are crafted to offer a perfect balance between comfort and luxury, turning houses into cherished homes. </p>
+              </div>
             </div>
           </div>
-      </section>
-      <section class="container lg:mx-auto bg-white grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 rounded-3xl gap-6 sm:mx-8 p-10">
+          <div class="md:w-1/2 w-full flex justify-end items-end">
+            <img src="./Images/Rectangle.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto bg-white grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 rounded-3xl gap-6 p-10">
         <div class="flex flex-col gap-4 text-center justify-center items-center">
           <img src="./Images/comment-01.png" alt="" class="">
           <h1 class="text-3xl font-bold"> 235+ </h1>
@@ -150,107 +152,217 @@
           <h1 class="text-3xl font-bold"> 307+ </h1>
           <p class=""> Staff Members </p>
         </div>
-      </section>
-      <section class="container mx-auto space-y-6 px-10">
+      </div>
+    </section>
+    <!-- How we works Section -->
+    <section class="space-y-24 bg-stone-100 py-24 lg:px-16 px-4">
+      <div class="container mx-auto space-y-6 px-10">
         <div class="flex flex-col gap-6 items-center text-center justify-center">
           <button class="btn rounded-full bg-white"> <i class="fa-solid fa-arrow-right-long"></i> <p class="text-xl"> How we works </p> </button>
           <h1 class="text-5xl font-extrabold text-center"> Our Works Process </h1>
-          <p class="text-lg text-[#494949] text-center text-wrap w-1/2"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents. </p>
+          <p class="text-xl opacity-80 text-center text-wrap w-full lg:w-1/2"> Our design process is a seamless journey from concept to completion, ensuring that every detail is tailored to your needs. </p>
         </div>
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
           <div class="bg-[#E7C1D3] space-y-3 rounded-2xl p-10">
             <img src="./Images/concept.png" alt="">
-            <h3 class="text-2xl font-semibold"> Concept </h3>
-            <p class="text-md opacity-80"> The barn house captivates with its blend of rustic charm and modern. </p>
+            <h3 class="text-2xl font-bold"> Concept </h3>
+            <p class="text-md opacity-80"> Every great design begins with a strong concept, where creativity meets functionality. </p>
           </div>
           <div class="bg-[#EFDA6E] space-y-3 rounded-2xl p-10">
             <img src="./Images/flow-chart.png" alt="">
-            <h3 class="text-2xl font-semibold"> Design Process </h3>
-            <p class="text-md opacity-80"> The barn house captivates with its blend of rustic charm and modern. </p>
+            <h3 class="text-2xl font-bold"> Design Process </h3>
+            <p class="text-md opacity-80"> Our meticulous design process ensures that every element aligns with your vision and lifestyle. </p>
           </div>
           <div class="bg-[#A4DAC3] space-y-3 rounded-2xl p-10">
             <img src="./Images/Supervision.png" alt="">
-            <h3 class="text-2xl font-semibold"> Supervision </h3>
-            <p class="text-md opacity-80"> The barn house captivates with its blend of rustic charm and modern. </p>
+            <h3 class="text-2xl font-bold"> Supervision </h3>
+            <p class="text-md opacity-80"> We oversee every step of the project, ensuring that the execution meets our high standards of quality. </p>
           </div>
           <div class="bg-[#77AAEA] space-y-3 rounded-2xl p-10">
             <img src="./Images/budget-planning.png" alt="">
-            <h3 class="text-2xl font-semibold"> Budget Planning </h3>
-            <p class="text-md opacity-80"> The barn house captivates with its blend of rustic charm and modern. </p>
+            <h3 class="text-2xl font-bold"> Budget Planning </h3>
+            <p class="text-md opacity-80"> Transparent budget planning is at the core of our process, providing you with a clear roadmap to your dream space. </p>
           </div>
         </div>
-      </section>
+      </div>
     </section>
     <!-- Our Latest Portfolio -->
-    <section class="items-center justify-center flex flex-col bg-white py-20 mx-32 space-y-6">
-    <div class="text-center flex flex-col justify-center items-center space-y-6">
-      <button class="btn rounded-full bg-[#ABEF5F33]"> <i class="fa-solid fa-arrow-right-long"></i> <p class="text-xl"> Let’s Connect </p> </button>
-      <h2 class="text-5xl font-extrabold">Our Latest Portfolio</h2>
-      <p class="text-[#494949] text-lg w-[300px] lg:w-[700px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-    </div>
-    <div>
-      <div class="flex flex-col lg:flex-row gap-5">
-        <div class="flex flex-col lg:flex-row items-center gap-6 border-2 w-[400px] lg:w-full border-slate-200 p-6 rounded-2xl">
-        <div>
-          <img class="w-[400px] " src="./Images/img1.png" alt="">
-        </div>
-        <div class="w-[300px] lg:w-[700px] space-y-5">
-          <h3 class="font-extrabold text-3xl">Commercial</h3>
-          <p class="text-[#494949] leading-7 text-xl">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
-          <button class="flex gap-2 items-center" href="">
-          <div class="bg-[#ABEF5F] rounded-full p-3">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <section class="items-center justify-center flex flex-col py-20 space-y-6 lg:px-24 px-4">
+      <div class="text-center flex flex-col justify-center items-center space-y-6">
+        <button class="btn rounded-full bg-[#ABEF5F33]"> <i class="fa-solid fa-arrow-right-long"></i> <p class="text-xl"> Let’s Connect </p> </button>
+        <h2 class="text-5xl font-extrabold">Our Latest Portfolio</h2>
+        <p class="text-xl opacity-80 w-[300px] lg:w-[700px]"> Take a look at our portfolio, where we turn visions into reality with stunning attention to detail and craftsmanship. </p>
+      </div>
+      <div>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <div class="flex flex-col lg:flex-row items-center gap-6 border-2 w-[400px] lg:w-full border-slate-200 p-6 rounded-2xl">
+            <div>
+              <img class="w-[400px] " src="./Images/img1.png" alt="">
+            </div>
+            <div class="w-[300px] lg:w-[700px] space-y-5">
+              <h3 class="font-bold text-3xl"> Commercial </h3>
+              <p class="opacity-80 text-xl"> Our portfolio showcases a range of commercial projects that exemplify innovation and functionality. </p>
+              <button class="flex gap-2 items-center" href="">
+                <div class="bg-[#ABEF5F] rounded-full p-3">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.007 2.05932L1.0033 13.0557" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
                   <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <a href="" class="text-2xl font-bold"> View Details </a>
+              </button>
+            </div>
+          </div>
+          <div class="border-2 border-slate-200 flex justify-center p-6 rounded-2xl">
+            <img src="./Images/img2.png" class="w-[400px]" alt="">
+          </div>
+          <div class="border-2 border-slate-200 flex justify-center p-6 rounded-2xl lg:hidden">
+            <img src="./Images/img5.png" class="w-[400px]" alt="">
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5 mt-5">
+          <div class="border-2 order-2 border-slate-200 flex justify-center p-6 rounded-2xl">
+            <img src="./Images/img3.png" class="w-[400px]" alt="">
+          </div>
+          <div class="flex lg:order-2 flex-col lg:flex-row items-center gap-6 border-2  border-slate-200 p-6 rounded-2xl lg:w-[1000px]">
+            <div>
+              <img class="w-[400px]" src="./Images/img4.png" alt="">
+            </div>
+            <div class="w-[300] lg:w-[400px] space-y-4">
+              <h3 class="font-bold text-3xl"> Residential </h3>
+              <p class="text-xl opacity-80"> Explore our residential works, where we bring elegance and comfort to life in every project. </p>
+              <button class="flex gap-2 items-center" href="">
+                <div class="bg-[#ABEF5F] rounded-full p-3">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.007 2.05932L1.0033 13.0557" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <a href="" class="text-2xl font-bold"> View Details </a>
+              </button>
+            </div>
+          </div>
+          <div class="border-2 order-2 lg:order-3 border-slate-200 flex justify-center p-6 rounded-2xl">
+            <img src="./Images/img5.png" class="w-[400px]" alt="">
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Rinterio News Section -->
+    <section class="py-20 bg-stone-100 lg:px-20 px-4 connect-section space-y-6">
+      <div class="container mx-auto px-10 space-y-8">
+        <div class="text-center flex flex-col justify-center items-center space-y-6">
+          <button class="btn rounded-full bg-[#ABEF5F33]"> <i class="fa-solid fa-arrow-right-long"></i> <p class="text-xl"> Rinterio News </p> </button>
+          <h2 class="text-5xl font-extrabold"> Read Our Articles and News </h2>
+          <p class="text-xl opacity-80 w-[300px] lg:w-[700px]"> Stay updated with the latest trends and insights in design, as we share our expertise and industry knowledge. </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 bg-gray-50 shadow-lg rounded-2xl space-y-4 border-2 border-slate-200">
+            <div>
+              <img class="w-full" src="./Images/article1.png" alt="">
+            </div>
+            <div class="flex items-center gap-2 opacity-80">
+              <i class="fa-regular fa-calendar"></i>
+              <p class=""> July14, 2024 </p>
+              <i class="fa-regular fa-circle-user"></i>
+              <p class=""> By Admin </p>
+            </div>
+            <h1 class="font-extrabold text-2xl"> How to choose the furniture right of your home. </h1>
+            <p class="text-md opacity-80"> Discover the latest trends in interiorbr design and how they can transform your spaces. </p>
+            <button class="flex gap-2 justify-center items-center" href="">
+              <a href="" class="text-xl font-bold"> Read More </a>
+              <div class="bg-[#ABEF5F] rounded-full p-2">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.007 2.05932L1.0033 13.0557" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
+              </div>
+            </button>
           </div>
-          <a href="" class="text-2xl font-bold"> View Details </a>
-          </button>
-        </div>
-      </div>
-      <div class="border-2 border-slate-200 flex justify-center p-6 rounded-2xl">
-          <img src="./Images/img2.png" class="w-[400px]" alt="">
-      </div>
-      <div class="border-2 border-slate-200 flex justify-center p-6 rounded-2xl lg:hidden">
-          <img src="./Images/img5.png" class="w-[400px]" alt="">
-      </div>
-    </div>
-    <div class="flex flex-col lg:flex-row gap-5 mt-5">
-      <div class="border-2 order-2 border-slate-200 flex justify-center p-6 rounded-2xl">
-        <img src="./Images/img3.png" class="w-[400px]" alt="">
-      </div>
-      <div class="flex lg:order-2 flex-col lg:flex-row items-center gap-6 border-2  border-slate-200 p-6 rounded-2xl lg:w-[1000px]">
-        <div>
-          <img class="w-[400px]" src="./Images/img4.png" alt="">
-        </div>
-        <div class="w-[300] lg:w-[400px] space-y-4">
-          <h3 class="font-extrabold text-3xl">Commercial</h3>
-          <p class="text-[#494949] leading-7 text-xl">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
-          <button class="flex gap-2 items-center" href="">
-          <div class="bg-[#ABEF5F] rounded-full p-3">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.007 2.05932L1.0033 13.0557" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <div class="p-6 bg-gray-50 shadow-lg rounded-2xl space-y-4 border-2 border-slate-200">
+            <div>
+              <img class="w-full" src="./Images/article2.png" alt="">
+            </div>
+            <div class="flex items-center gap-2 opacity-80">
+              <i class="fa-regular fa-calendar"></i>
+              <p class=""> July14, 2024 </p>
+              <i class="fa-regular fa-circle-user"></i>
+              <p class=""> By Admin </p>
+            </div>
+            <h1 class="font-extrabold text-2xl"> How to choose the furniture right of your home. </h1>
+            <p class="text-md opacity-80"> Stay informed with industry news and updates that shape the future of design. </p>
+            <button class="flex gap-2 justify-center items-center" href="">
+              <a href="" class="text-xl font-bold"> Read More </a>
+              <div class="bg-[#ABEF5F] rounded-full p-2">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.007 2.05932L1.0033 13.0557" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </button>
           </div>
-            <a href="" class="text-2xl font-bold"> View Details </a>
-          </button>
+          <div class="p-6 bg-gray-50 shadow-lg rounded-2xl space-y-4 border-2 border-slate-200">
+            <div>
+              <img class="w-full" src="./Images/article3.png" alt="">
+            </div>
+            <div class="flex items-center gap-2 opacity-80">
+              <i class="fa-regular fa-calendar"></i>
+              <p class=""> July14, 2024 </p>
+              <i class="fa-regular fa-circle-user"></i>
+              <p class=""> By Admin </p>
+            </div>
+            <h1 class="font-extrabold text-2xl"> How to choose the furniture right of your home. </h1>
+            <p class="text-md opacity-80"> Get inspired by our latest projects and insights from our team of expert designers. </p>
+            <button class="flex gap-2 justify-center items-center" href="">
+              <a href="" class="text-xl font-bold"> Read More </a>
+              <div class="bg-[#ABEF5F] rounded-full p-2">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.007 2.05932L1.0033 13.0557" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="border-2 order-2 lg:order-3 border-slate-200 flex justify-center p-6 rounded-2xl">
-          <img src="./Images/img5.png" class="w-[400px]" alt="">
+    </section>
+    <!-- Our Service Section -->
+    <section class="py-20 bg-stone-100 lg:px-20 px-4 connect-section space-y-6">
+      <div class="container mx-auto text-center px-10">
+        <h2 class="text-5xl font-bold mb-7"> Our Services </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 bg-gray-50 shadow-lg rounded-2xl space-y-4 border-2 border-slate-200">
+            <div class="">
+              <img class="w-full h-[250px] rounded-2xl" src="./Images/service-1.jpg" alt="">
+            </div>
+            <h3 class="font-extrabold text-2xl"> Interior Design </h3>
+            <p class="text-md opacity-80"> We create stunning interiors that combine style with functionality. </p>
+          </div>
+          <div class="p-6 bg-gray-50 shadow-lg rounded-2xl space-y-4 border-2 border-slate-200">
+            <div class="">
+              <img class="w-full h-[250px] rounded-2xl" src="./Images/Servise-2.jpg" alt="">
+            </div>
+            <h3 class="font-extrabold text-2xl"> Exterior Design </h3>
+            <p class="text-md opacity-80"> Our exterior designs enhance curb appeal and reflect your personal taste. </p>
+          </div>
+          <div class="p-6 bg-gray-50 shadow-lg rounded-2xl space-y-4 border-2 border-slate-200">
+            <div class="">
+              <img class="w-full h-[250px] rounded-2xl" src="./Images/Service-3.jpg" alt="">
+            </div>
+            <h3 class="font-extrabold text-2xl"> Project Management </h3>
+            <p class="text-md opacity-80"> We oversee the entire process from concept to completion, ensuring a seamless experience. </p>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </section>
     <!-- Let’s Discuss Next Project -->
-    <section class="py-20 bg-stone-100 lg:px-64 px-4 connect-section space-y-6 background">
+    <section class="py-20 lg:px-64 px-4 connect-section space-y-6 background">
     <div class="text-center flex flex-col justify-center items-center space-y-6">
       <button class="btn rounded-full bg-[#ABEF5F33]"> <i class="fa-solid fa-arrow-right-long"></i> <p class="text-xl"> Let’s Connect </p> </button>
       <h2 class="text-5xl font-extrabold"> Let’s Discuss Next Project </h2>
-      <p class="text-[#494949] text-lg w-[300px] lg:w-[700px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      <p class="text-[#494949] text-lg w-[300px] lg:w-[700px]"> We’re here to help you bring your vision to life. Get in touch with us to start your design journey today. </p>
     </div>
-    <div class="space-y-8">
+    <div class="container mx-auto space-y-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <input class="px-5 py-4 rounded-full" type="text" placeholder="First Name*">
         <input class="px-5 py-4 rounded-full" type="number" placeholder="Phone Number*">
@@ -280,7 +392,7 @@
       </div>
       <a href="" class="text-[#E9E9E9] text-4xl font-bold"> Rinterio </a>
     </button>
-    <p class="text-[#737373] text-wrap lg:w-[800px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+    <p class="text-[#737373] text-wrap lg:w-[800px]">Join our community and stay connected with the latest updates and exclusive offers. Your dream space is just a click away.</p>
     <ul class="menu menu-horizontal flex gap-8">
       <li class="text-[#E9E9E9] text-xl font-semibold"> <a href=""> Home </a> </li>
       <li class="text-[#E9E9E9] text-xl font-semibold"> <a href=""> Services </a> </li>
